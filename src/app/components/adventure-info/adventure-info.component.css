@@ -1,0 +1,13 @@
+div.adventure-info-container {
+    width: 100%;
+    min-height: 60px;
+    background-color: rgb(224, 171, 101);
+}
+
+div.adventure-badge {
+    text-align: center;
+}
+
+div.adventure-badge .ng-fa-icon {
+    font-size: 25px;
+}

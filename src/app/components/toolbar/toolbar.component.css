@@ -1,0 +1,26 @@
+.spacer {
+    flex: 1;
+}
+
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(60, 67, 62);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+#carved-rock-logo {
+    margin: 0 16px;
+    width: 140px;
+}
+
+#pluralsight-logo {
+    margin: 0 16px;
+    width: 50px;
+}

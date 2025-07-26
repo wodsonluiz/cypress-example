@@ -1,0 +1,17 @@
+<div class="container w-100vw">
+    <div class="row">
+        <h2 class="text-center w-100" id="main-title" data-test-automation="main-title">Conquer summits and climb through a variety of terrains</h2>
+    </div>
+    <ul>
+        <li class="row" *ngIf="filterValue">
+            <p data-test-automation="filtered-by" class="lead">Filtered by: <b>{{filterValue}}</b></p>
+        </li>
+        <li class="row">
+            <p data-test-automation="number-of-results" class="lead">Number of results: <b>{{numberOfResults}}</b></p>
+        </li>
+    </ul>
+    <div class="row" *ngFor="let adventureRow of filteredAdventures | gridTransform:3">
+        <div class="col-sm-4" *ngFor="let adventure of adventureRow">
+            <app-adventure-card [adventure]="adventure"></app-adventure-card>
+        </div>
+    </div>

@@ -1,0 +1,27 @@
+<div class="modal-header">
+    <h4 class="modal-title text-center" id="modal-primary-title">Add New Comment</h4>
+    <button type="button" class="close" aria-label="Close" id="close-modal" (click)="dismiss()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body centered">
+    <form #commentForm="ngForm" (ngSubmit)="commentForm.form.valid && submit(commentForm.form)">
+        <div class="form-group" data-test-automation="name">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" [(ngModel)]="model.name" #name="ngModel" [ngClass]="{ 'is-invalid': commentForm.submitted && name.invalid }" required>
+            <div class="invalid-feedback" *ngIf="commentForm.submitted && name.invalid">
+                <p *ngIf="name.errors && name.errors['required']" class="text-danger">Name is required.</p>
+            </div>
+        </div>
+        <div class="form-group" data-test-automation="comment-text">
+            <label for="comment">Comment</label>
+            <textarea class="form-control" id="comment-text" rows="3" name="comment" [(ngModel)]="model.comment" #comment="ngModel" [ngClass]="{ 'is-invalid': commentForm.submitted && comment.invalid }" required></textarea>
+            <div class="invalid-feedback" *ngIf="commentForm.submitted && comment.invalid">
+                <p *ngIf="comment.errors && comment.errors['required']" class="text-danger">Comment is required.</p>
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="submit" id="add-comment-button" class="btn btn-secondary">Add Comment</button>
+        </div>
+    </form>
+</div>

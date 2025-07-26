@@ -1,0 +1,70 @@
+{
+  "adventures": [
+    {
+      "id": 1,
+      "title": "Breithorn, Pennine Alps",
+      "image": "../../assets/adventure-images/carved-rock-img-5.jpg",
+      "description": "Climbing Breithorn you will receive views that are remarkable. There is so much to see, including, the Matterhorn (4,478m), the Gendarm (4,106m), Monte Rosa (4,634m), the Roccia Nera (4,075m), among several more peaks and glaciers.",
+      "level": "Beginner",
+      "duration": "1 day",
+      "mountainRange": "Alps",
+      "numberOfParticipants": "3-6",
+      "availability": "September",
+      "defaultCommentsLength": 1,
+      "comments": [
+        {
+          "name": "Tom",
+          "comment": "If there is a majestic view, it must be from here!"
+        },
+        {
+          "name": "Wod",
+          "comment": "What a great adventure!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Lascar Volcano, Chile",
+      "image": "../../assets/adventure-images/carved-rock-img-2.jpg",
+      "description": "Lascar volcano is one of the most active volcanoes in this mountain range. Recently, it erupted in 2015. The strongest eruption of the last decades occurred in 1993. Situated near San Pedro de Atacama, Lascar Volcano is one of the most climbed high altitude mountains in the world.",
+      "level": "Intermediate",
+      "duration": "2 days",
+      "mountainRange": "Andes",
+      "numberOfParticipants": "6",
+      "availability": "May",
+      "defaultCommentsLength": 1,
+      "comments": [
+        {
+          "name": "Monica and Jeff",
+          "comment": "Absolutely beautiful. We were totally blown away by the scenery."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Rock Climbing, Tara",
+      "image": "../../assets/adventure-images/carved-rock-img-8.jpg",
+      "description": "The Tara Mountains are a massif in Serbia, on the border with Bosnia. The massif, which has been declared a National Park, belongs to the Dinaric Alps and its highest peak reaches an altitude of 1,591 meters. Across these mountains, runs the beautiful Drina River, where we’ll be able to enjoy kayaking on the first day of the program.",
+      "level": "Beginner",
+      "duration": "3 days",
+      "mountainRange": "Dinaric Alps",
+      "numberOfParticipants": "Up to 20",
+      "availability": "September",
+      "defaultCommentsLength": 2,
+      "comments": [
+        {
+          "name": "Jane",
+          "comment": "Great experience!"
+        },
+        {
+          "name": "Peter",
+          "comment": "Excellent mountain with easy access!"
+        },
+        {
+          "name": "Wodson",
+          "comment": "Great!"
+        }
+      ]
+    }
+  ]
+}

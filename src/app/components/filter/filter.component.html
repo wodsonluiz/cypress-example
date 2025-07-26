@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="input-group ml-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1"><i class="bi bi-filter"></i></span>
+        </div>
+        <input [ngModel]="filterValue" data-test-automation="filter" (ngModelChange)="onChange($event)" type="text" class="form-control" [placeholder]="placeholder" aria-label="Filter" aria-describedby="basic-addon1">
+    </div>
+
+    <button class="btn ml-1" data-test-automation="clear-filter" (click)="onClear()">Clear</button>
+</div>

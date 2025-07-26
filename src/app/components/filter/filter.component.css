@@ -1,0 +1,22 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+div.container {
+    display: flex;
+}
+
+button {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+    color: #495057
+}
+
+button:hover {
+    background-color: #d4d6d8;
+}
+
+button:active {
+    background-color: #c9cace;
+}
+
+input {
+    border: none;
+}

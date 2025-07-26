@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+        <h2 id="title" class="text-center">{{adventure.title}}</h2>
+    </div>
+    <div class="row">
+        <div class="col-12 adventure-image" [style.background-image]="'url(' + adventure.image || '' + ')'">
+        </div>
+    </div>
+    <app-adventure-info [level]="adventure.level" [duration]="adventure.duration" [mountainRange]="adventure.mountainRange" [numberOfParticipants]="adventure.numberOfParticipants" [availability]="adventure.availability">
+    </app-adventure-info>
+</div>
+<div class="container">
+    <div class="row mt-3" data-test-automation="adventure-description">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    Description
+                </div>
+                <div class="card-body">
+                    <p>
+                        {{adventure.description}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3" data-test-automation="adventure-comments">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header p-2 pl-4">
+                    <div class="pt-1 float-left">Last 3 Comments</div>
+                    <button class="btn btn-primary float-right" data-toggle="modal" (click)="handleModal()">Add
+                Comment</button>
+                    <button class="btn btn-primary float-right mr-3" data-toggle="modal" (click)="resetComments()">Reset
+                    Comments</button>
+                </div>
+                <div class="card-body" data-test-automation="user-comments">
+                    <blockquote class="blockquote mb-0" *ngFor="let comment of adventure.comments | slice:adventure.comments.length > 3 ?  adventure.comments.length - 3 : 0">
+                        <p>{{comment.comment}}</p>
+                        <footer class="blockquote-footer">{{comment.name}}</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

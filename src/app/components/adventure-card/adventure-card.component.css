@@ -1,0 +1,17 @@
+.card-text {
+    font-size: 14px;
+}
+
+a.btn {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+    color: #495057;
+}
+
+a.btn:hover {
+    background-color: #d4d6d8;
+}
+
+a.btn:active {
+    background-color: #c9cace;
+}

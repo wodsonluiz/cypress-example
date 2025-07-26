@@ -1,0 +1,6 @@
+.content {
+    margin: 82px auto 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

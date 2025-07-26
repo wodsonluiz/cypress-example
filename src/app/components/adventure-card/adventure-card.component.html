@@ -1,0 +1,8 @@
+<div class="card">
+    <img class="card-img-top" [src]="adventure.image" alt="Adventure image">
+    <div class="card-body">
+        <h5 class="card-title">{{adventure.title}}</h5>
+        <p class="card-text">{{adventure.description}}</p>
+        <a [routerLink]="['/adventure', adventure.id]" data-test-automation="more-details-button" class="btn mt-2">More Details</a>
+    </div>
+</div>
