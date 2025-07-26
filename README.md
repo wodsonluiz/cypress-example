@@ -1,27 +1,63 @@
-# CarvedrockApp
+## Cypress
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+Javascipt end to end testing framework 
 
-## Development server
+ #### Why Cypress
+ 1. Automatically waits for elements to become available
+ 2. Simplifies debugging by taking snapshots of test execution
+ 3. Saves videos and scrrenshots of test execution
+ 4. Contains a built-in selector playground
+ 5. Includes unique features because it runs directly in the browser
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### Trede offs of Cypress
+- Cypress is not used to index web pages, performance testing or to script tree party sites
+- Communication with back-end like server or database is limited
+- There is not muilt tabs support
+- Cypress does not support multiple browsers open at the same time
+- Cypress test are limited to the same origin
 
-## Code scaffolding
+> Cypress is not based on Selenium Webdriver
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### Links
+- [Documentação oficial do metodo cy.get](https://docs.cypress.io/api/commands/get)
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+**Suport**
+- Chrome
+- Edge
+- Mozilla
 
-## Running unit tests
+**Commands for Simulating User Actions**
+- `click()
+	- click simulates a click action on an element
+- `dbclick()`
+	- dbclick simulates a doble click action on an element
+- `type()`
+	- type enters text into an input or textarea
+- `clear()`
+	- clear clears the value of an input or textarea
+- `focus()`, `blur()`
+	- blur blurs a focused element and focus focuses an element
+- `check()`
+	- check checks checkboxes or radios
+- `select()`
+	- select selects an option of a select
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+<img width="701" height="602" alt="Screenshot 2025-07-26 at 14 15 59" src="https://github.com/user-attachments/assets/25228bfe-a059-4ea4-a605-153b57761f88" />
+<img width="729" height="368" alt="Screenshot 2025-07-26 at 14 16 44" src="https://github.com/user-attachments/assets/1c4dbaad-22d1-4ce5-9a9e-46953d1a3ae8" />
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+#### Comandos
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+### Adiciona o pacote do Cypress
+ng add @cypress/schematic
+
+### Abrir o console do cypress
+npx cypress open
+```
+
+####Boas práticas para encontrar elementos pelo cypress
+<img width="699" height="332" alt="Screenshot 2025-07-26 at 14 17 20" src="https://github.com/user-attachments/assets/452b901e-aca5-4d0b-b0d6-7d44db2f4ccf" />
+
